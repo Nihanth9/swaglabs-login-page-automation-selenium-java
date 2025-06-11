@@ -1,7 +1,6 @@
 package GitHub;
 
 import java.time.Duration;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -39,13 +38,12 @@ public static void main(String[] args) {
 	//Verify the page
 	String expectedURL= "https://www.saucedemo.com/inventory.html";
 	String actualURL=driver.getCurrentUrl();
-	if (expectedURL.equalsIgnoreCase(actualURL)) {
-		System.out.println("Login Successful");
-	} else {
-		System.out.println("Login failed");
+	if (expectedURL.equalsIgnoreCase(actualURL)) 
+	{
+	System.out.println("Login Successful");
+	} 
+	else {
+	System.out.println("Login failed");
 	}
-	
-	
-	
 }
 }
